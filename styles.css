@@ -1,21 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background: black;
 }
-img{
+
+img {
     height: 500px;
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
-#caixaNumeros{
+#caixaNumeros {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -23,28 +24,71 @@ img{
     background: white;
     border-radius: 6px;
     padding-left: 15px;
-    
+
 }
 
-.numeros{
+.numeros {
     font-weight: 600px;
     font-size: 50px;
     text-align: center;
 }
 
-.numero-verde{
+.numero-verde {
     color: #c5fb01;
 }
 
-#caixaBotoes{
+#caixaBotoes {
     margin-top: 20px;
     text-align: center;
     padding: 6px 16px;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
+#reset {
+    color: rgb(255, 162, 0);
+}
 
+#stop {
+    color: red;
+}
 
+#start {
+    color: green;
+}
+
+.ativo {
+    opacity: 0.5;
+}
+
+.inativo {
+    opacity: 1;
+}
+
+@media (max-width: 900px) {
+    #caixaNumeros {
+        margin-right: auto;
+        margin-left: auto;
+        width: 200px;
+        
+    }
+
+    .numeros {
+        font-weight: 200px;
+        font-size: 25px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    img {
+        margin-top: 50px;
+        height: 330px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+}
